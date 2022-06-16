@@ -1,0 +1,57 @@
+.contenedorGaleria{
+    margin: 1rem;
+    width: $anchogeneral;
+    text-align: center;
+    font-family: 'Spectral', serif;
+
+
+
+    @mixin tiraFotos{
+        width: $anchogeneral;
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        .fotoRectangular{
+            width: 40rem;
+            height: 25rem; 
+        }
+
+        img{
+            width: 20rem;
+            height: 25rem;
+            opacity: 0.7;
+            border: black;
+                
+                &:hover{
+                opacity: 1;
+                border: white;
+                }
+            }
+        }
+    
+
+    .tiraFotosLugar1{
+    @include tiraFotos;
+    }
+
+    .tiraFotosLugar2{
+    @include tiraFotos;
+    }
+
+    .tiraFotosEventos{
+    @include tiraFotos;
+    }
+
+
+    .tiraFotosProceso{
+    @include tiraFotos;
+    }
+
+    
+    
+
+
+}

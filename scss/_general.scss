@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: $verdeagua;
+    width: $anchogeneral;
+    align-content: center;
+}
+
+
+h1{
+    text-align: center;
+    width: $anchogeneral;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1.5rem;
+    word-spacing: 2rem;
+    font-size: 6rem;
+    background-image: url(https://images.pexels.com/photos/5370024/pexels-photo-5370024.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-position: center;
+    background-repeat: repeat;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1rem;
+    word-spacing: 2rem;
+    font-size: 4.5rem;
+    color: $bordo;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1rem;
+    word-spacing: 1.5rem;
+    color: $bordo;
+
+}
+
+a{
+    font-family: 'Spectral', serif;
+    text-decoration: none;
+    text-decoration-color: none;
+    text-decoration: none;
+    color: $mostaza;
+
+    &:hover{
+        font-weight: bold;
+    }
+
+}
+
+
+.menu{
+    background-color: $mostaza;
+    list-style-type: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    word-spacing: 3rem;
+    text-transform: uppercase;
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    width: $anchogeneral;
+
+    li{
+        display: inline-block;
+        text-align: center;
+
+        a{
+            font-family: 'Teko', sans-serif;
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+
+            &:hover{
+                color: $bordo;
+            }
+            
+        }
+    }
+}
+
+a{
+    &:hover{
+        transform: scale(1.2, 1.2);
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+p{
+    font-family: 'Spectral', serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow: auto;
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px;
+    letter-spacing: 0.2rem;
+    
+}
+
+footer{
+    background-color: $mostaza;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: $anchogeneral;
+
+    .logoParaFooter{
+    width: 2.5rem;
+    height: 2.5rem;
+
+    &:hover{
+        transform: scale(1.2, 1.2);
+    }
+    }
+}
+

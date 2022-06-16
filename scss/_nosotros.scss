@@ -1,0 +1,42 @@
+.contenedorNosotros{
+    border: 3px;
+    margin: 1rem;
+    width: $anchogeneral;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Spectral', serif;
+
+    @mixin cuadradonosotros{
+        display: flex;
+        flex-direction: row;
+
+            img{
+            width: $anchogeneral/4
+            }
+
+            p{
+            overflow: auto;
+            width: $anchogeneral/4;
+            justify-items: center;
+            }
+        }
+    
+
+        .cuadradoNosotros1{
+            @include cuadradonosotros;
+        }
+
+
+        .cuadradoNosotros2{
+            @include cuadradonosotros;
+        }
+
+
+        .fotoDelMedioNosotros{ 
+            img{
+            width: $anchogeneral;
+            height: 20rem; 
+            }
+        }
+}

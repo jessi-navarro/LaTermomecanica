@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./favicon-LT.png">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300&family=Teko:wght@600&display=swap" rel="stylesheet">
+    <meta name="description" content="La Termomecánica es una fábrica en transformación. A principios del 2020 cerró sus puertas, actualmente se está transformando en un espacio cultural.">
+    <meta name="keywords" content="termomecánica, enfriol, fabrica, espacio cultural, villa del parque, CABA, taller, eventos">
+    <title>CONTACTO - LA TERMOMECÁNICA</title>
+</head>
+
+<body>
+    <section class="contenedorContacto">
+        <header>
+            <h1>
+                CONTACTO
+            </h1>
+        </header>
+        <main>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="nosotros.html"> Nosotros </a></li>
+                <li><a href="galeria.html"> Galeria </a></li>
+                <li><a href="agenda.html"> Agenda </a></li>
+                <li><a href="contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+
+        <h2 data-aos="zoom-out">Te interesa el proyecto? Contactanos!</h2>
+
+        <form class="formularioContacto" action="">
+            <fieldset>
+                <div>
+                    <label for="nombre y apellido"><b>Ingresa tu nombre y apellido</b></label>
+                    <input type="text" name="nombre" placeholder="Juan Perez">
+                </div>
+            <br>
+        
+                <div>
+                    <label for="email"><b> Ingresa tu mail</b></label>
+                    <input type="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="Cómo nos conociste?"><b>Cómo nos conociste?</b></label>
+                    <select name="Cómo nos conociste?" id="">
+                        <option value="Por redes">Por redes</option>
+                        <option value="Conozco a alguien del proyecto">Conozco a alguien del proyecto</option>
+                        <option value="Fui a un evento en La Termo">Fui a un evento en La Termo</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="sexo"><b>Género</b></label><br>
+                    <input type="radio" name="sexo" value="Mujer">Mujer
+                    <input type="radio" name="sexo" value="Hombre">Hombre
+                    <input type="radio" name="sexo" value="Otro">Otro
+                    <input type="radio" name="sexo" value="Prefiero no decir">Prefiero no decir
+                </div>
+                <br>
+                <div>
+                    <label for="Por qué te interesa el proyecto?"><b>Por qué te interesa el proyecto?</b></label>
+                    <select name="Por qué te interesa el proyecto?" id="">
+                        <option value="Doy un curso y quiero utilizar el espacio">Doy un curso y quiero utilizar el espacio</option>
+                        <option value="Quiero enterarme de eventos/fechas">Quiero enterarme de eventos/fechas</option>
+                        <option value="Quiero hacer un evento en La Termo">Quiero hacer un evento en La Termo</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="Dejanos tu comentario">Estamos arrancando este proyecto y todo lo que tengas para decir nos sirve! <b>Deja tu comentario:</b></label><br>
+                    <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Les quería contar que..."></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </div>
+
+            </fieldset>
+        </form>
+
+
+        
+        <br>
+        <footer>
+            <a href="https://www.instagram.com/la.termomecanica/" target="_blank"><img class="logoParaFooter" src="./logos-footer/LOGO-IG.png" alt="LogoIG"></a>
+            <a href="contacto.html"><img class="logoParaFooter" src="./logos-footer/email-png.png" alt="contacto"></a>
+    </footer>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script>
+
+</main>
+</body>
+</html>
