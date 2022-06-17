@@ -134,8 +134,9 @@ footer .logoParaFooter:hover {
           transform: scale(1.2, 1.2);
 }
 
-.contenedorHome .carouselExampleControls {
+.contenedorHome #rouselExampleControls {
   width: 86rem;
+  height: 30rem;
 }
 
 .contenedorHome .tiraHome1 {
@@ -154,6 +155,7 @@ footer .logoParaFooter:hover {
 
 .contenedorHome .tiraHome1 img {
   width: 28.66667rem;
+  height: 25rem;
 }
 
 .contenedorHome .tiraHome1 p {
@@ -180,6 +182,7 @@ footer .logoParaFooter:hover {
 
 .contenedorHome .tiraHome2 img {
   width: 28.66667rem;
+  height: 25rem;
 }
 
 .contenedorHome .tiraHome2 p {
@@ -204,12 +207,63 @@ footer .logoParaFooter:hover {
 
 .contenedorHome .tiraHome3 img {
   width: 28.66667rem;
+  height: 25rem;
 }
 
 .contenedorHome .tiraHome3 p {
   width: 43rem;
   font-size: 2.2rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .tiraHome1 {
+    width: 86rem;
+    height: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tiraHome1 p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .tiraHome2 {
+    width: 86rem;
+    height: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #b95a5a;
+    border-radius: 5%;
+  }
+  .tiraHome2 p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .tiraHome3 {
+    width: 86rem;
+    height: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tiraHome3 p {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 .contenedorNosotros {
@@ -220,9 +274,17 @@ footer .logoParaFooter:hover {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-family: 'Spectral', serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: repeat auto, 6;
+      grid-template-rows: repeat auto, 6;
+      grid-template-areas: "h1" "menu" "cuadradoNosotros1" "fotoDelMedioNosotros" "cuadradoNosotros2" "footer";
 }
 
 .contenedorNosotros .cuadradoNosotros1 {
+  width: 86rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,6 +305,7 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorNosotros .cuadradoNosotros2 {
+  width: 86rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,16 +330,114 @@ footer .logoParaFooter:hover {
   height: 20rem;
 }
 
+.contenedorNosotros h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h1;
+}
+
+.contenedorNosotros menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+.contenedorNosotros .cuadradoNosotros1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cuadradoNosotros1;
+}
+
+.contenedorNosotros .fotoDelMedioNosotros {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: fotoDelMedioNosotros;
+}
+
+.contenedorNosotros .cuadradoNosotros2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: cuadradoNosotros2;
+}
+
+.contenedorNosotros footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 500px) {
+  .contenedorNosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: repeat auto, 6;
+        grid-template-rows: repeat auto, 6;
+        grid-template-areas: "h1" "menu" "cuadradoNosotros1" "fotoDelMedioNosotros" "cuadradoNosotros2" "footer";
+  }
+  .contenedorNosotros h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h1;
+  }
+  .contenedorNosotros menu {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: menu;
+  }
+  .contenedorNosotros .cuadradoNosotros1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: cuadradoNosotros1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorNosotros .fotoDelMedioNosotros {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: fotoDelMedioNosotros;
+  }
+  .contenedorNosotros .cuadradoNosotros2 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: cuadradoNosotros2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorNosotros footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: footer;
+  }
+}
+
 .contenedorGaleria {
   margin: 1rem;
   width: 86rem;
   text-align: center;
   font-family: 'Spectral', serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: repeat auto, 10;
+      grid-template-rows: repeat auto, 10;
+      grid-template-areas: "h1" "menu" "tituloElLugar" "tiraFotosLugar1" "tiraFotosLugar2" "tituloEventos" "tiraFotosEventos" "tituloElProceso" "tiraFotosProceso" "footer";
 }
 
 .contenedorGaleria .tiraFotosLugar1 {
   width: 86rem;
-  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,7 +470,6 @@ footer .logoParaFooter:hover {
 
 .contenedorGaleria .tiraFotosLugar2 {
   width: 86rem;
-  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,7 +502,6 @@ footer .logoParaFooter:hover {
 
 .contenedorGaleria .tiraFotosEventos {
   width: 86rem;
-  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +534,6 @@ footer .logoParaFooter:hover {
 
 .contenedorGaleria .tiraFotosProceso {
   width: 86rem;
-  margin: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,6 +564,157 @@ footer .logoParaFooter:hover {
   border: white;
 }
 
+.contenedorGaleria h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h1;
+}
+
+.contenedorGaleria .menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+.contenedorGaleria .tituloElLugar {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tituloElLugar;
+}
+
+.contenedorGaleria .tiraFotosLugar1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: tiraFotosLugar1;
+}
+
+.contenedorGaleria .tiraFotosLugar2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: tiraFotosLugar1;
+}
+
+.contenedorGaleria .tituloEventos {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: tituloEventos;
+}
+
+.contenedorGaleria .tiraFotosEventos {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: tiraFotosEventos;
+}
+
+.contenedorGaleria .tituloElProceso {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: tituloElProceso;
+}
+
+.contenedorGaleria .tiraFotosProceso {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: tiraFotosEventos;
+}
+
+.contenedorGaleria footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 500px) {
+  .contenedorGaleria {
+    display: -ms-grid;
+    display: grid;
+    gap: 1 rem;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: repeat auto, 10;
+        grid-template-rows: repeat auto, 10;
+        grid-template-areas: "h1" "menu" "tituloElLugar" "tiraFotosLugar1" "tiraFotosLugar2" "tituloEventos" "tiraFotosEventos" "tituloElProceso" "tiraFotosProceso" "footer";
+  }
+  .contenedorGaleria h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h1;
+  }
+  .contenedorGaleria .menu {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: menu;
+  }
+  .contenedorGaleria .tituloElLugar {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: tituloElLugar;
+  }
+  .contenedorGaleria .tiraFotosLugar1 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: tiraFotosLugar1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorGaleria .tiraFotosLugar2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: tiraFotosLugar1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorGaleria .tituloEventos {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: tituloEventos;
+  }
+  .contenedorGaleria .tiraFotosEventos {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: tiraFotosEventos;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorGaleria .tituloElProceso {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: tituloElProceso;
+  }
+  .contenedorGaleria .tiraFotosProceso {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: tiraFotosEventos;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorGaleria footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: footer;
+  }
+}
+
 .contenedorAgenda .accordion {
   width: 86rem;
   font-family: 'Spectral', serif;
@@ -420,10 +729,17 @@ footer .logoParaFooter:hover {
 
 .contenedorContacto {
   width: 86rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (5)[auto];
+      grid-template-rows: repeat(auto, 5);
+      grid-template-areas: "h1" "menu" "h2" "formularioContacto" "footer";
 }
 
 .contenedorContacto .formularioContacto {
-  margin: 2rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,5 +750,78 @@ footer .logoParaFooter:hover {
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.2rem;
+}
+
+.contenedorContacto .formularioContacto fieldset {
+  padding: 1rem;
+  border: none;
+  text-align: center;
+}
+
+.contenedorContacto h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h1;
+}
+
+.contenedorContacto .menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+.contenedorContacto h2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: h2;
+}
+
+.contenedorContacto .formularioContacto {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: formularioContacto;
+}
+
+.contenedorContacto footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 500px) {
+  .contenedorContacto {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (5)[auto];
+        grid-template-rows: repeat(auto, 5);
+        grid-template-areas: "h1" "menu" "h2" "formularioContacto" "footer";
+  }
+  .contenedorContacto h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h1;
+  }
+  .contenedorContacto .menu {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: menu;
+  }
+  .contenedorContacto h2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: h2;
+  }
+  .contenedorContacto .formularioContacto {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: formularioContacto;
+  }
+  .contenedorContacto footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: footer;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

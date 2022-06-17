@@ -8,6 +8,7 @@
     font-family: 'Spectral', serif;
 
     @mixin cuadradonosotros{
+        width: $anchogeneral;
         display: flex;
         flex-direction: row;
 
@@ -39,4 +40,85 @@
             height: 20rem; 
             }
         }
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 6);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "cuadradoNosotros1"
+    "fotoDelMedioNosotros"
+    "cuadradoNosotros2"
+    "footer";
+
+    h1{
+        grid-area: h1;
+    }
+
+    menu{
+        grid-area: menu;
+    }
+
+    .cuadradoNosotros1{
+        grid-area: cuadradoNosotros1;
+    }
+
+    .fotoDelMedioNosotros{
+        grid-area: fotoDelMedioNosotros;
+    }
+
+    .cuadradoNosotros2{
+        grid-area: cuadradoNosotros2;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .contenedorNosotros{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 6);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "cuadradoNosotros1"
+    "fotoDelMedioNosotros"
+    "cuadradoNosotros2"
+    "footer";
+
+    h1{
+        grid-area: h1;
+    }
+
+    menu{
+        grid-area: menu;
+    }
+
+    .cuadradoNosotros1{
+        grid-area: cuadradoNosotros1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotoDelMedioNosotros{
+        grid-area: fotoDelMedioNosotros;
+    }
+
+    .cuadradoNosotros2{
+        grid-area: cuadradoNosotros2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+    }
+
+    
 }

@@ -1,6 +1,7 @@
 .contenedorHome{
-    .carouselExampleControls{
+    #rouselExampleControls{
     width: $anchogeneral;
+    height: 30rem;
     }
 
     @mixin tiraHome{
@@ -13,6 +14,7 @@
 
     img{
         width: $anchogeneral/3;
+        height: 25rem;
     }
 
     p{
@@ -24,6 +26,43 @@
     }  
 
     .tiraHome1{
+    @include tiraHome;
+    }
+
+    .tiraHome2{
+    @include tiraHome;
+    background-color:  $bordo;
+    border-radius: 5%;
+    }
+
+
+
+    .tiraHome3{
+    @include tiraHome
+    }
+
+
+
+}
+
+@media only screen and (max-width: 500px){
+
+    @mixin tiraHome{
+        width: $anchogeneral;
+        height: 30rem;
+        padding: 1rem;
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+
+}
+
+.tiraHome1{
     @include tiraHome;
     }
 

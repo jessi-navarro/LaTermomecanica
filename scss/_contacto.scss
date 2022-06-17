@@ -3,13 +3,85 @@
 
     
     .formularioContacto{
-        margin: 2rem;
+        margin: 1rem;
         display: flex;
         justify-content: center;
         font-family: 'Spectral', serif;
         font-size: 1rem;
         line-height: 1.5;
         letter-spacing: 0.2rem;
+
+        fieldset{
+            padding: 1rem;
+            border: none;
+            text-align: center;
+        }
     }
 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(auto, 5);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "h2"
+    "formularioContacto"
+    "footer";
+
+
+    h1{
+        grid-area: h1;
+    }
+
+    .menu{
+        grid-area: menu;
+    }
+
+    h2{
+        grid-area: h2;
+    }
+
+    .formularioContacto{
+        grid-area: formularioContacto;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .contenedorContacto{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(auto, 5);
+        grid-template-areas:
+        "h1"
+        "menu"
+        "h2"
+        "formularioContacto"
+        "footer";
+    
+    
+        h1{
+            grid-area: h1;
+        }
+    
+        .menu{
+            grid-area: menu;
+        }
+    
+        h2{
+            grid-area: h2;
+        }
+    
+        .formularioContacto{
+            grid-area: formularioContacto;
+        }
+    
+        footer{
+            grid-area: footer;
+        }
+    }
 }

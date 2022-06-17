@@ -8,7 +8,6 @@
 
     @mixin tiraFotos{
         width: $anchogeneral;
-        margin: 2rem;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -51,7 +50,127 @@
     }
 
     
-    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 10);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "tituloElLugar"
+    "tiraFotosLugar1"
+    "tiraFotosLugar2"
+    "tituloEventos"
+    "tiraFotosEventos"
+    "tituloElProceso"
+    "tiraFotosProceso"
+    "footer";
+
+    h1{
+        grid-area: h1;
+    }
+
+    .menu{
+        grid-area: menu;
+    }
+
+    .tituloElLugar{
+        grid-area: tituloElLugar;
+    }
+
+    .tiraFotosLugar1{
+        grid-area: tiraFotosLugar1;
+    }
+
+    .tiraFotosLugar2{
+        grid-area: tiraFotosLugar1;
+    }
+
+    .tituloEventos{
+        grid-area: tituloEventos;
+    }
+
+    .tiraFotosEventos{
+        grid-area: tiraFotosEventos;
+    }
+
+    .tituloElProceso{
+        grid-area: tituloElProceso;
+    }
+
+    .tiraFotosProceso{
+        grid-area: tiraFotosEventos;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+}
 
 
+@media only screen and (max-width: 500px){
+    .contenedorGaleria{
+    display: grid;
+    gap: 1 rem;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 10);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "tituloElLugar"
+    "tiraFotosLugar1"
+    "tiraFotosLugar2"
+    "tituloEventos"
+    "tiraFotosEventos"
+    "tituloElProceso"
+    "tiraFotosProceso"
+    "footer";
+
+    h1{
+        grid-area: h1;
+    }
+
+    .menu{
+        grid-area: menu;
+    }
+
+    .tituloElLugar{
+        grid-area: tituloElLugar;
+    }
+
+    .tiraFotosLugar1{
+        grid-area: tiraFotosLugar1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tiraFotosLugar2{
+        grid-area: tiraFotosLugar1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloEventos{
+        grid-area: tituloEventos;
+    }
+
+    .tiraFotosEventos{
+        grid-area: tiraFotosEventos;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloElProceso{
+        grid-area: tituloElProceso;
+    }
+
+    .tiraFotosProceso{
+        grid-area: tiraFotosEventos;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+    }
 }
