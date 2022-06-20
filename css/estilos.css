@@ -134,12 +134,39 @@ footer .logoParaFooter:hover {
           transform: scale(1.2, 1.2);
 }
 
-.contenedorHome #rouselExampleControls {
+.contenedorHome {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: repeat auto, 7;
+      grid-template-rows: repeat auto, 7;
+      grid-template-areas: "h1" "menu" "carouselExampleControls" "tiraHome1" "tiraHome2" "tiraHome3" "footer";
+}
+
+.contenedorHome h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: h1;
+}
+
+.contenedorHome .menu {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+.contenedorHome #carouselExampleControls {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: carouselExampleControls;
   width: 86rem;
-  height: 30rem;
 }
 
 .contenedorHome .tiraHome1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: tiraHome1;
   width: 86rem;
   height: 30rem;
   padding: 1rem;
@@ -165,6 +192,9 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorHome .tiraHome2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: tiraHome2;
   width: 86rem;
   height: 30rem;
   padding: 1rem;
@@ -192,6 +222,9 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorHome .tiraHome3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: tiraHome3;
   width: 86rem;
   height: 30rem;
   padding: 1rem;
@@ -216,8 +249,42 @@ footer .logoParaFooter:hover {
   text-align: center;
 }
 
+.contenedorHome footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
 @media only screen and (max-width: 500px) {
-  .tiraHome1 {
+  .contenedorHome {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: repeat auto, 7;
+        grid-template-rows: repeat auto, 7;
+        grid-template-areas: "h1" "menu" "carouselExampleControls" "tiraHome1" "tiraHome2" "tiraHome3" "footer";
+  }
+  .contenedorHome h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: h1;
+  }
+  .contenedorHome .menu {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: menu;
+  }
+  .contenedorHome #carouselExampleControls {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: carouselExampleControls;
+    width: 86rem;
+  }
+  .contenedorHome .tiraHome1 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: tiraHome1;
     width: 86rem;
     height: 30rem;
     padding: 1rem;
@@ -225,14 +292,28 @@ footer .logoParaFooter:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .tiraHome1 p {
-    font-size: 1rem;
-    text-align: center;
+  .contenedorHome .tiraHome1 p {
+    font-size: 0.9rem;
+    overflow: auto;
   }
-  .tiraHome2 {
+  .contenedorHome .tiraHome1 img {
+    -ms-grid-column-align: auto;
+        justify-self: auto;
+    width: 28.66667rem;
+    height: 20rem;
+  }
+  .contenedorHome .tiraHome2 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: tiraHome2;
     width: 86rem;
     height: 30rem;
     padding: 1rem;
@@ -240,16 +321,30 @@ footer .logoParaFooter:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #b95a5a;
     border-radius: 5%;
   }
-  .tiraHome2 p {
-    font-size: 1rem;
-    text-align: center;
+  .contenedorHome .tiraHome2 p {
+    font-size: 0.9rem;
+    overflow: auto;
   }
-  .tiraHome3 {
+  .contenedorHome .tiraHome2 img {
+    -ms-grid-column-align: auto;
+        justify-self: auto;
+    width: 28.66667rem;
+    height: 20rem;
+  }
+  .contenedorHome .tiraHome3 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: tiraHome3;
     width: 86rem;
     height: 30rem;
     padding: 1rem;
@@ -257,12 +352,28 @@ footer .logoParaFooter:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .tiraHome3 p {
-    font-size: 1rem;
-    text-align: center;
+  .contenedorHome .tiraHome3 p {
+    font-size: 0.9rem;
+    overflow: auto;
+  }
+  .contenedorHome .tiraHome3 img {
+    -ms-grid-column-align: auto;
+        justify-self: auto;
+    width: 28.66667rem;
+    height: 20rem;
+  }
+  .contenedorHome footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: footer;
   }
 }
 
@@ -292,6 +403,9 @@ footer .logoParaFooter:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contenedorNosotros .cuadradoNosotros1 img {
@@ -313,6 +427,9 @@ footer .logoParaFooter:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contenedorNosotros .cuadradoNosotros2 img {
@@ -457,6 +574,7 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorGaleria .tiraFotosLugar1 img {
+  margin: 1rem;
   width: 20rem;
   height: 25rem;
   opacity: 0.7;
@@ -489,6 +607,7 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorGaleria .tiraFotosLugar2 img {
+  margin: 1rem;
   width: 20rem;
   height: 25rem;
   opacity: 0.7;
@@ -521,6 +640,7 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorGaleria .tiraFotosEventos img {
+  margin: 1rem;
   width: 20rem;
   height: 25rem;
   opacity: 0.7;
@@ -553,6 +673,7 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorGaleria .tiraFotosProceso img {
+  margin: 1rem;
   width: 20rem;
   height: 25rem;
   opacity: 0.7;
@@ -727,6 +848,14 @@ footer .logoParaFooter:hover {
   background-color: #e2c103;
 }
 
+.contenedorAgenda h1 {
+  width: 86rem;
+}
+
+.contenedorAgenda footer {
+  width: 86rem;
+}
+
 .contenedorContacto {
   width: 86rem;
   display: -ms-grid;
@@ -739,6 +868,7 @@ footer .logoParaFooter:hover {
 }
 
 .contenedorContacto .formularioContacto {
+  width: 86rem;
   margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;

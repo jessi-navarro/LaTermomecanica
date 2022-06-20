@@ -1,8 +1,16 @@
 .contenedorHome{
-    #rouselExampleControls{
-    width: $anchogeneral;
-    height: 30rem;
-    }
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 7);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "carouselExampleControls"
+    "tiraHome1"
+    "tiraHome2"
+    "tiraHome3"
+    "footer";
 
     @mixin tiraHome{
     width: $anchogeneral;
@@ -25,11 +33,28 @@
 
     }  
 
+    
+    h1{
+        grid-area: h1;
+    }
+
+    
+    .menu{
+        grid-area: menu;
+    }
+
+    #carouselExampleControls{
+        grid-area: carouselExampleControls;
+        width: $anchogeneral;
+    }
+
     .tiraHome1{
+    grid-area: tiraHome1;
     @include tiraHome;
     }
 
     .tiraHome2{
+    grid-area: tiraHome2;
     @include tiraHome;
     background-color:  $bordo;
     border-radius: 5%;
@@ -38,43 +63,90 @@
 
 
     .tiraHome3{
-    @include tiraHome
+    grid-area: tiraHome3;
+    @include tiraHome;
     }
 
-
+    
+    footer{
+        grid-area: footer;
+    }
 
 }
 
 @media only screen and (max-width: 500px){
 
-    @mixin tiraHome{
+    .contenedorHome{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 7);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "carouselExampleControls"
+    "tiraHome1"
+    "tiraHome2"
+    "tiraHome3"
+    "footer";
+    
+    
+
+    @mixin tiraHomeMobile{
         width: $anchogeneral;
         height: 30rem;
         padding: 1rem;
         margin: 1rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
 
         p{
-            font-size: 1rem;
-            text-align: center;
+            font-size: 0.9rem;
+            overflow: auto;
         }
 
-}
+        img{
+            justify-self: auto;
+            width: $anchogeneral/3;
+            height: 20rem;
+        }
 
-.tiraHome1{
-    @include tiraHome;
+    }
+
+    h1{
+        grid-area: h1;
+    }
+
+    
+    .menu{
+        grid-area: menu;
+    }
+
+    #carouselExampleControls{
+        grid-area: carouselExampleControls;
+        width: $anchogeneral;
+    }
+
+    .tiraHome1{
+    grid-area: tiraHome1;
+    @include tiraHomeMobile;
     }
 
     .tiraHome2{
-    @include tiraHome;
+    grid-area: tiraHome2;
+    @include tiraHomeMobile;
     background-color:  $bordo;
     border-radius: 5%;
     }
 
 
-
     .tiraHome3{
-    @include tiraHome
+    grid-area: tiraHome3;
+    @include tiraHomeMobile;
     }
+
+    footer{
+        grid-area: footer;
+    }
+}
 }
