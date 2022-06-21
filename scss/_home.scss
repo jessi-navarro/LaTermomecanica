@@ -74,7 +74,7 @@
 
 }
 
-@media only screen and (max-width: 500px){
+@media screen and (max-width: 360px){
 
     .contenedorHome{
     display: grid;
@@ -107,7 +107,7 @@
 
         img{
             justify-self: auto;
-            width: $anchogeneral/3;
+            width: 25rem;
             height: 20rem;
         }
 
@@ -124,7 +124,6 @@
 
     #carouselExampleControls{
         grid-area: carouselExampleControls;
-        width: $anchogeneral;
     }
 
     .tiraHome1{
