@@ -32,33 +32,39 @@
             <ul>
                 <li><a href="index.html"> Home </a></li>
                 <li><a href="nosotros.html"> Nosotros </a></li>
-                <li><a href="galeria.html"> Galeria </a></li>
+                <li><a href="galeria.html"> Galería </a></li>
                 <li><a href="agenda.html"> Agenda </a></li>
                 <li><a href="contacto.html"> Contacto </a></li>
             </ul>
         </nav>
 
-        <div id="carouselExampleControls" class="carousel mt-3" data-ride="carousel">
-            <div class="carousel-inner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner mt-3">
             <div class="carousel-item active">
-                <img width="86rem" height="500rem" class="d-block w-100" src="./fotos/vista-general-exterior.jpg" alt="Vista general exterior">
+                <img src="./fotos/vista-general-exterior.jpg" class="d-block w-100" alt="Vista general exterior">
             </div>
             <div class="carousel-item">
-                <img width="86rem" height="500rem" class="d-block w-100" src="./fotos/fondo-galpon.jpg" alt="Fondo del galpón">
+                <img src="./fotos/taller-escritura.jpg" class="d-block w-100" alt="Fondo del galpón">
             </div>
             <div class="carousel-item">
-                <img width="86rem" height="500rem" class="d-block w-100" src="./fotos/oficina-1.jpg" alt="Oficina 1">
+                <img src="./fotos/oficina-1.jpg" class="d-block w-100" alt="Oficina 1 antes de remodelación">
             </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-            </a>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
 
         <div class="tiraHome1">
         <img data-aos="fade-right" src="./fotos/patio-en-otoño.jpg" alt="Patio En Otoño">

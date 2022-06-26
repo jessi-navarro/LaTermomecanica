@@ -1,4 +1,51 @@
 .contenedorAgenda{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 8);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "tituloAgenda"
+    "primerAcordion"
+    "tituloAgenda2"
+    "segundoAcordion"
+    "h3"
+    "footer";
+
+    h1{
+        grid-area: h1;
+    }
+
+    .menu{
+        grid-area: menu;
+    }
+
+    .tituloAgenda{
+        grid-area: tituloAgenda;
+    }
+
+    .primerAcordion{
+        grid-area: primerAcordion;
+    }
+
+    .tituloAgenda2{
+        grid-area: tituloAgenda2;
+    }
+
+    .segundoAcordion{
+        grid-area: segundoAcordion;
+    }
+
+    h3{
+        grid-area: h3;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+
     .accordion{
         width: $anchogeneral;
         font-family: 'Spectral', serif;
@@ -6,18 +53,71 @@
         line-height: 1.5;
         letter-spacing: 0.2rem;
 
-        .colorCabezal{
-            background-color: $mostaza;
+        .colorTipoCabezal{
+            background-color: $bordo;
+            opacity: 0.8;
+            color: black;
+
+            &:hover{
+                opacity:1;
+            }
+        }
+    
+        .cuerpoAgenda{
+            background-color: $verdeagua;
         }
 
 
     }
 
+}
+
+@media screen and (max-width:500px) {
+    .contenedorAgenda{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat (auto, 8);
+    grid-template-areas:
+    "h1"
+    "menu"
+    "tituloAgenda"
+    "primerAcordion"
+    "tituloAgenda2"
+    "segundoAcordion"
+    "h3"
+    "footer";
+
     h1{
-        width: $anchogeneral;
+        grid-area: h1;
+    }
+
+    .menu{
+        grid-area: menu;
+    }
+
+    .tituloAgenda{
+        grid-area: tituloAgenda;
+    }
+
+    .primerAcordion{
+        grid-area: primerAcordion;
+    }
+
+    .tituloAgenda2{
+        grid-area: tituloAgenda2;
+    }
+
+    .segundoAcordion{
+        grid-area: segundoAcordion;
+    }
+
+    h3{
+        grid-area: h3;
     }
 
     footer{
-        width: $anchogeneral;
+        grid-area: footer;
     }
+
+}
 }

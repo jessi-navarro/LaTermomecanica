@@ -72,9 +72,15 @@
         grid-area: footer;
     }
 
+
+    .carousel-item{
+        width: $anchogeneral;
+        height: 50 rem;
+    }
+
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 500px){
 
     .contenedorHome{
     display: grid;
