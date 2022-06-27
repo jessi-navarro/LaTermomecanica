@@ -98,7 +98,7 @@ footer {
 
 .contenedorHome {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat auto, 7;
   grid-template-areas: "h1" "menu" "carouselExampleControls" "tiraHome1" "tiraHome2" "tiraHome3" "footer"; }
   .contenedorHome h1 {
@@ -164,7 +164,7 @@ footer {
 @media screen and (max-width: 500px) {
   .contenedorHome {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat auto, 7;
     grid-template-areas: "h1" "menu" "carouselExampleControls" "tiraHome1" "tiraHome2" "tiraHome3" "footer"; }
     .contenedorHome h1 {
@@ -235,7 +235,7 @@ footer {
   letter-spacing: 0.1rem;
   font-family: 'Spectral', serif;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat auto, 6;
   grid-template-areas: "h1" "menu" "cuadradoNosotros1" "fotoDelMedioNosotros" "cuadradoNosotros2" "footer"; }
   .contenedorNosotros .cuadradoNosotros1 {
@@ -279,7 +279,7 @@ footer {
 @media only screen and (max-width: 500px) {
   .contenedorNosotros {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat auto, 6;
     grid-template-areas: "h1" "menu" "cuadradoNosotros1" "fotoDelMedioNosotros" "cuadradoNosotros2" "footer"; }
     .contenedorNosotros h1 {
@@ -305,7 +305,7 @@ footer {
   text-align: center;
   font-family: 'Spectral', serif;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat auto, 10;
   grid-template-areas: "h1" "menu" "tituloElLugar" "tiraFotosLugar1" "tiraFotosLugar2" "tituloEventos" "tiraFotosEventos" "tituloElProceso" "tiraFotosProceso" "footer"; }
   .contenedorGaleria .tiraFotosLugar1 {
@@ -405,7 +405,7 @@ footer {
   .contenedorGaleria {
     display: grid;
     gap: 1 rem;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat auto, 10;
     grid-template-areas: "h1" "menu" "tituloElLugar" "tiraFotosLugar1" "tiraFotosLugar2" "tituloEventos" "tiraFotosEventos" "tituloElProceso" "tiraFotosProceso" "footer"; }
     .contenedorGaleria h1 {
@@ -439,7 +439,7 @@ footer {
 
 .contenedorAgenda {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat auto, 8;
   grid-template-areas: "h1" "menu" "tituloAgenda" "primerAcordion" "tituloAgenda2" "segundoAcordion" "h3" "footer"; }
   .contenedorAgenda h1 {
@@ -476,7 +476,7 @@ footer {
 @media screen and (max-width: 500px) {
   .contenedorAgenda {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat auto, 8;
     grid-template-areas: "h1" "menu" "tituloAgenda" "primerAcordion" "tituloAgenda2" "segundoAcordion" "h3" "footer"; }
     .contenedorAgenda h1 {
@@ -499,7 +499,7 @@ footer {
 .contenedorContacto {
   width: 86rem;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(auto, 5);
   grid-template-areas: "h1" "menu" "h2" "formularioContacto" "footer"; }
   .contenedorContacto .formularioContacto {
@@ -529,7 +529,7 @@ footer {
 @media only screen and (max-width: 500px) {
   .contenedorContacto {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 5);
     grid-template-areas: "h1" "menu" "h2" "formularioContacto" "footer"; }
     .contenedorContacto h1 {

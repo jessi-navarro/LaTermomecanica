@@ -20,7 +20,7 @@
     }
 
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 5);
     grid-template-areas:
     "h1"
@@ -55,7 +55,7 @@
 @media only screen and (max-width: 500px){
     .contenedorContacto{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(auto, 5);
         grid-template-areas:
         "h1"

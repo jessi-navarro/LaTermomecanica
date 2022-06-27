@@ -1,7 +1,7 @@
 .contenedorHome{
 
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 7);
     grid-template-areas:
     "h1"
@@ -84,7 +84,7 @@
 
     .contenedorHome{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 7);
     grid-template-areas:
     "h1"

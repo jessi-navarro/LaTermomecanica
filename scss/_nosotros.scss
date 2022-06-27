@@ -43,7 +43,7 @@
         }
         
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 6);
     grid-template-areas:
     "h1"
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 500px) {
     .contenedorNosotros{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 6);
     grid-template-areas:
     "h1"

@@ -52,7 +52,7 @@
 
     
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 10);
     grid-template-areas:
     "h1"
@@ -112,7 +112,7 @@
     .contenedorGaleria{
     display: grid;
     gap: 1 rem;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 10);
     grid-template-areas:
     "h1"
