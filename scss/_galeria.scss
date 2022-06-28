@@ -110,6 +110,36 @@
 
 @media only screen and (max-width: 500px){
     .contenedorGaleria{
+
+        @mixin tiraFotosMobile{
+            width: $anchogeneral;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+    
+            .fotoRectangular{
+                width: $anchogeneral - 5rem;
+                height: 25rem; 
+            }
+    
+            img{
+                margin: 1rem;
+                width: ($anchogeneral/2) - 3rem;
+                height: 25rem;
+                opacity: 0.7;
+                border: black;
+                    
+                    &:hover{
+                    opacity: 1;
+                    border: white;
+                    }
+                }
+            }
+
+
+
+
     display: grid;
     gap: 1 rem;
     grid-template-columns: 1fr;
@@ -140,14 +170,12 @@
 
     .tiraFotosLugar1{
         grid-area: tiraFotosLugar1;
-        display: flex;
-        flex-direction: column;
+        @include tiraFotosMobile;
     }
 
     .tiraFotosLugar2{
         grid-area: tiraFotosLugar1;
-        display: flex;
-        flex-direction: column;
+        @include tiraFotosMobile;
     }
 
     .tituloEventos{
@@ -156,8 +184,7 @@
 
     .tiraFotosEventos{
         grid-area: tiraFotosEventos;
-        display: flex;
-        flex-direction: column;
+        @include tiraFotosMobile;
     }
 
     .tituloElProceso{
@@ -166,8 +193,7 @@
 
     .tiraFotosProceso{
         grid-area: tiraFotosEventos;
-        display: flex;
-        flex-direction: column;
+        @include tiraFotosMobile;
     }
 
     footer{

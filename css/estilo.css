@@ -176,53 +176,53 @@ footer {
     .contenedorHome .tiraHome1 {
       grid-area: tiraHome1;
       width: 86rem;
-      height: 30rem;
+      height: 40rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      align-items: center; }
       .contenedorHome .tiraHome1 p {
         font-size: 0.9rem;
-        overflow: auto; }
+        overflow: auto;
+        width: 86rem; }
       .contenedorHome .tiraHome1 img {
-        justify-self: auto;
-        width: 25rem;
-        height: 20rem; }
+        width: 35rem;
+        height: 30rem; }
     .contenedorHome .tiraHome2 {
       grid-area: tiraHome2;
       width: 86rem;
-      height: 30rem;
+      height: 40rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       background-color: #b95a5a;
       border-radius: 5%; }
       .contenedorHome .tiraHome2 p {
         font-size: 0.9rem;
-        overflow: auto; }
+        overflow: auto;
+        width: 86rem; }
       .contenedorHome .tiraHome2 img {
-        justify-self: auto;
-        width: 25rem;
-        height: 20rem; }
+        width: 35rem;
+        height: 30rem; }
     .contenedorHome .tiraHome3 {
       grid-area: tiraHome3;
       width: 86rem;
-      height: 30rem;
+      height: 40rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      align-items: center; }
       .contenedorHome .tiraHome3 p {
         font-size: 0.9rem;
-        overflow: auto; }
+        overflow: auto;
+        width: 86rem; }
       .contenedorHome .tiraHome3 img {
-        justify-self: auto;
-        width: 25rem;
-        height: 20rem; }
+        width: 35rem;
+        height: 30rem; }
     .contenedorHome footer {
       grid-area: footer; } }
 
@@ -288,14 +288,33 @@ footer {
       grid-area: menu; }
     .contenedorNosotros .cuadradoNosotros1 {
       grid-area: cuadradoNosotros1;
+      width: 86rem;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
+      .contenedorNosotros .cuadradoNosotros1 img {
+        width: 35rem;
+        height: 30rem; }
+      .contenedorNosotros .cuadradoNosotros1 p {
+        overflow: auto;
+        width: 86rem; }
     .contenedorNosotros .fotoDelMedioNosotros {
-      grid-area: fotoDelMedioNosotros; }
+      grid-area: fotoDelMedioNosotros;
+      width: 86rem; }
+      .contenedorNosotros .fotoDelMedioNosotros img {
+        width: 76rem; }
     .contenedorNosotros .cuadradoNosotros2 {
       grid-area: cuadradoNosotros2;
+      width: 86rem;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
+      .contenedorNosotros .cuadradoNosotros2 img {
+        width: 35rem;
+        height: 30rem; }
+      .contenedorNosotros .cuadradoNosotros2 p {
+        overflow: auto;
+        width: 86rem; }
     .contenedorNosotros footer {
       grid-area: footer; } }
 
@@ -416,24 +435,84 @@ footer {
       grid-area: tituloElLugar; }
     .contenedorGaleria .tiraFotosLugar1 {
       grid-area: tiraFotosLugar1;
+      width: 86rem;
       display: flex;
-      flex-direction: column; }
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; }
+      .contenedorGaleria .tiraFotosLugar1 .fotoRectangular {
+        width: 81rem;
+        height: 25rem; }
+      .contenedorGaleria .tiraFotosLugar1 img {
+        margin: 1rem;
+        width: 40rem;
+        height: 25rem;
+        opacity: 0.7;
+        border: black; }
+        .contenedorGaleria .tiraFotosLugar1 img:hover {
+          opacity: 1;
+          border: white; }
     .contenedorGaleria .tiraFotosLugar2 {
       grid-area: tiraFotosLugar1;
+      width: 86rem;
       display: flex;
-      flex-direction: column; }
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; }
+      .contenedorGaleria .tiraFotosLugar2 .fotoRectangular {
+        width: 81rem;
+        height: 25rem; }
+      .contenedorGaleria .tiraFotosLugar2 img {
+        margin: 1rem;
+        width: 40rem;
+        height: 25rem;
+        opacity: 0.7;
+        border: black; }
+        .contenedorGaleria .tiraFotosLugar2 img:hover {
+          opacity: 1;
+          border: white; }
     .contenedorGaleria .tituloEventos {
       grid-area: tituloEventos; }
     .contenedorGaleria .tiraFotosEventos {
       grid-area: tiraFotosEventos;
+      width: 86rem;
       display: flex;
-      flex-direction: column; }
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; }
+      .contenedorGaleria .tiraFotosEventos .fotoRectangular {
+        width: 81rem;
+        height: 25rem; }
+      .contenedorGaleria .tiraFotosEventos img {
+        margin: 1rem;
+        width: 40rem;
+        height: 25rem;
+        opacity: 0.7;
+        border: black; }
+        .contenedorGaleria .tiraFotosEventos img:hover {
+          opacity: 1;
+          border: white; }
     .contenedorGaleria .tituloElProceso {
       grid-area: tituloElProceso; }
     .contenedorGaleria .tiraFotosProceso {
       grid-area: tiraFotosEventos;
+      width: 86rem;
       display: flex;
-      flex-direction: column; }
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; }
+      .contenedorGaleria .tiraFotosProceso .fotoRectangular {
+        width: 81rem;
+        height: 25rem; }
+      .contenedorGaleria .tiraFotosProceso img {
+        margin: 1rem;
+        width: 40rem;
+        height: 25rem;
+        opacity: 0.7;
+        border: black; }
+        .contenedorGaleria .tiraFotosProceso img:hover {
+          opacity: 1;
+          border: white; }
     .contenedorGaleria footer {
       grid-area: footer; } }
 

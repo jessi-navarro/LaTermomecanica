@@ -81,6 +81,26 @@
 
 @media only screen and (max-width: 500px) {
     .contenedorNosotros{
+
+        @mixin cuadradonosotrosMobile{
+            width: $anchogeneral;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+                img{
+                    width: 35rem;
+                    height: 30rem;
+                }
+    
+                p{
+                overflow: auto;
+                width: $anchogeneral;
+                }
+            }
+
+
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 6);
@@ -102,18 +122,20 @@
 
     .cuadradoNosotros1{
         grid-area: cuadradoNosotros1;
-        display: flex;
-        flex-direction: column;
+        @include cuadradonosotrosMobile;
     }
 
     .fotoDelMedioNosotros{
         grid-area: fotoDelMedioNosotros;
+        width: $anchogeneral;
+        img{
+            width: $anchogeneral - 10rem;
+        }
     }
 
     .cuadradoNosotros2{
         grid-area: cuadradoNosotros2;
-        display: flex;
-        flex-direction: column;
+        @include cuadradonosotrosMobile;
     }
 
     footer{

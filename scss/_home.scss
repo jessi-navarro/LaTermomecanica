@@ -99,22 +99,23 @@
 
     @mixin tiraHomeMobile{
         width: $anchogeneral;
-        height: 30rem;
+        height: 40rem;
         padding: 1rem;
         margin: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
 
         p{
             font-size: 0.9rem;
             overflow: auto;
+            width: $anchogeneral;
+
         }
 
         img{
-            justify-self: auto;
-            width: 25rem;
-            height: 20rem;
+            width: 35rem;
+            height: 30rem;
         }
 
     }
