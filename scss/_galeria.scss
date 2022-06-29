@@ -162,6 +162,9 @@
 
     .menu{
         grid-area: menu;
+        li{
+            font-size: 3.5;
+        }
     }
 
     .tituloElLugar{
@@ -198,6 +201,11 @@
 
     footer{
         grid-area: footer;
+        height: 3.5rem;
+        .logoParaFooter{
+            width: 3rem;
+            height: 3rem;
     }
+}
     }
 }

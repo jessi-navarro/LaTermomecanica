@@ -171,29 +171,31 @@ footer {
       grid-area: h1; }
     .contenedorHome .menu {
       grid-area: menu; }
+      .contenedorHome .menu li {
+        font-size: 3.5; }
     .contenedorHome #carouselExampleControls {
       grid-area: carouselExampleControls; }
     .contenedorHome .tiraHome1 {
       grid-area: tiraHome1;
       width: 86rem;
-      height: 50rem;
+      height: 60rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
       .contenedorHome .tiraHome1 p {
-        font-size: 3rem;
+        font-size: 2.8rem;
         overflow: auto;
         width: 86rem;
         height: 20rem; }
       .contenedorHome .tiraHome1 img {
-        width: 35rem;
-        height: 30rem; }
+        width: 45rem;
+        height: 40rem; }
     .contenedorHome .tiraHome2 {
       grid-area: tiraHome2;
       width: 86rem;
-      height: 50rem;
+      height: 60rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
@@ -202,32 +204,36 @@ footer {
       background-color: #b95a5a;
       border-radius: 5%; }
       .contenedorHome .tiraHome2 p {
-        font-size: 3rem;
+        font-size: 2.8rem;
         overflow: auto;
         width: 86rem;
         height: 20rem; }
       .contenedorHome .tiraHome2 img {
-        width: 35rem;
-        height: 30rem; }
+        width: 45rem;
+        height: 40rem; }
     .contenedorHome .tiraHome3 {
       grid-area: tiraHome3;
       width: 86rem;
-      height: 50rem;
+      height: 60rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
       .contenedorHome .tiraHome3 p {
-        font-size: 3rem;
+        font-size: 2.8rem;
         overflow: auto;
         width: 86rem;
         height: 20rem; }
       .contenedorHome .tiraHome3 img {
-        width: 35rem;
-        height: 30rem; }
+        width: 45rem;
+        height: 40rem; }
     .contenedorHome footer {
-      grid-area: footer; } }
+      grid-area: footer;
+      height: 3.5rem; }
+      .contenedorHome footer .logoParaFooter {
+        width: 3rem;
+        height: 3rem; } }
 
 .contenedorNosotros {
   border: 3px;
@@ -289,6 +295,8 @@ footer {
       grid-area: h1; }
     .contenedorNosotros menu {
       grid-area: menu; }
+      .contenedorNosotros menu li {
+        font-size: 3.5; }
     .contenedorNosotros .cuadradoNosotros1 {
       grid-area: cuadradoNosotros1;
       width: 86rem;
@@ -321,7 +329,11 @@ footer {
         width: 86rem;
         font-size: 2rem; }
     .contenedorNosotros footer {
-      grid-area: footer; } }
+      grid-area: footer;
+      height: 3.5rem; }
+      .contenedorNosotros footer .logoParaFooter {
+        width: 3rem;
+        height: 3rem; } }
 
 .contenedorGaleria {
   margin: 1rem;
@@ -436,6 +448,8 @@ footer {
       grid-area: h1; }
     .contenedorGaleria .menu {
       grid-area: menu; }
+      .contenedorGaleria .menu li {
+        font-size: 3.5; }
     .contenedorGaleria .tituloElLugar {
       grid-area: tituloElLugar; }
     .contenedorGaleria .tiraFotosLugar1 {
@@ -519,7 +533,11 @@ footer {
           opacity: 1;
           border: white; }
     .contenedorGaleria footer {
-      grid-area: footer; } }
+      grid-area: footer;
+      height: 3.5rem; }
+      .contenedorGaleria footer .logoParaFooter {
+        width: 3rem;
+        height: 3rem; } }
 
 .contenedorAgenda {
   display: grid;
@@ -567,6 +585,8 @@ footer {
       grid-area: h1; }
     .contenedorAgenda .menu {
       grid-area: menu; }
+      .contenedorAgenda .menu li {
+        font-size: 3.5; }
     .contenedorAgenda .tituloAgenda {
       grid-area: tituloAgenda; }
     .contenedorAgenda .primerAcordion {
@@ -585,7 +605,11 @@ footer {
       grid-area: h3;
       font-size: 3rem; }
     .contenedorAgenda footer {
-      grid-area: footer; } }
+      grid-area: footer;
+      height: 3.5rem; }
+      .contenedorAgenda footer .logoParaFooter {
+        width: 3rem;
+        height: 3rem; } }
 
 .contenedorContacto {
   width: 86rem;
@@ -628,10 +652,16 @@ footer {
       grid-area: h1; }
     .contenedorContacto .menu {
       grid-area: menu; }
+      .contenedorContacto .menu li {
+        font-size: 3.5; }
     .contenedorContacto h2 {
       grid-area: h2; }
     .contenedorContacto .formularioContacto {
       grid-area: formularioContacto;
       font-size: 2rem; }
     .contenedorContacto footer {
-      grid-area: footer; } }
+      grid-area: footer;
+      height: 3.5rem; }
+      .contenedorContacto footer .logoParaFooter {
+        width: 3rem;
+        height: 3rem; } }
