@@ -102,6 +102,9 @@
 
     .primerAcordion{
         grid-area: primerAcordion;
+        p{
+            font-size: 2rem;
+        }
     }
 
 
@@ -112,10 +115,18 @@
 
     .segundoAcordion{
         grid-area: segundoAcordion;
+        p{
+            font-size: 2rem;
+        }
+        li{
+            font-size: 2rem;
+        }
     }
+    
 
     h3{
         grid-area: h3;
+        font-size: 3rem;
     }
 
     footer{

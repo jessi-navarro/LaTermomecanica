@@ -176,23 +176,24 @@ footer {
     .contenedorHome .tiraHome1 {
       grid-area: tiraHome1;
       width: 86rem;
-      height: 40rem;
+      height: 50rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
       .contenedorHome .tiraHome1 p {
-        font-size: 0.9rem;
+        font-size: 3rem;
         overflow: auto;
-        width: 86rem; }
+        width: 86rem;
+        height: 20rem; }
       .contenedorHome .tiraHome1 img {
         width: 35rem;
         height: 30rem; }
     .contenedorHome .tiraHome2 {
       grid-area: tiraHome2;
       width: 86rem;
-      height: 40rem;
+      height: 50rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
@@ -201,25 +202,27 @@ footer {
       background-color: #b95a5a;
       border-radius: 5%; }
       .contenedorHome .tiraHome2 p {
-        font-size: 0.9rem;
+        font-size: 3rem;
         overflow: auto;
-        width: 86rem; }
+        width: 86rem;
+        height: 20rem; }
       .contenedorHome .tiraHome2 img {
         width: 35rem;
         height: 30rem; }
     .contenedorHome .tiraHome3 {
       grid-area: tiraHome3;
       width: 86rem;
-      height: 40rem;
+      height: 50rem;
       padding: 1rem;
       margin: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
       .contenedorHome .tiraHome3 p {
-        font-size: 0.9rem;
+        font-size: 3rem;
         overflow: auto;
-        width: 86rem; }
+        width: 86rem;
+        height: 20rem; }
       .contenedorHome .tiraHome3 img {
         width: 35rem;
         height: 30rem; }
@@ -297,7 +300,8 @@ footer {
         height: 30rem; }
       .contenedorNosotros .cuadradoNosotros1 p {
         overflow: auto;
-        width: 86rem; }
+        width: 86rem;
+        font-size: 2rem; }
     .contenedorNosotros .fotoDelMedioNosotros {
       grid-area: fotoDelMedioNosotros;
       width: 86rem; }
@@ -314,7 +318,8 @@ footer {
         height: 30rem; }
       .contenedorNosotros .cuadradoNosotros2 p {
         overflow: auto;
-        width: 86rem; }
+        width: 86rem;
+        font-size: 2rem; }
     .contenedorNosotros footer {
       grid-area: footer; } }
 
@@ -446,7 +451,7 @@ footer {
       .contenedorGaleria .tiraFotosLugar1 img {
         margin: 1rem;
         width: 40rem;
-        height: 25rem;
+        height: 50rem;
         opacity: 0.7;
         border: black; }
         .contenedorGaleria .tiraFotosLugar1 img:hover {
@@ -465,7 +470,7 @@ footer {
       .contenedorGaleria .tiraFotosLugar2 img {
         margin: 1rem;
         width: 40rem;
-        height: 25rem;
+        height: 50rem;
         opacity: 0.7;
         border: black; }
         .contenedorGaleria .tiraFotosLugar2 img:hover {
@@ -486,7 +491,7 @@ footer {
       .contenedorGaleria .tiraFotosEventos img {
         margin: 1rem;
         width: 40rem;
-        height: 25rem;
+        height: 50rem;
         opacity: 0.7;
         border: black; }
         .contenedorGaleria .tiraFotosEventos img:hover {
@@ -507,7 +512,7 @@ footer {
       .contenedorGaleria .tiraFotosProceso img {
         margin: 1rem;
         width: 40rem;
-        height: 25rem;
+        height: 50rem;
         opacity: 0.7;
         border: black; }
         .contenedorGaleria .tiraFotosProceso img:hover {
@@ -566,12 +571,19 @@ footer {
       grid-area: tituloAgenda; }
     .contenedorAgenda .primerAcordion {
       grid-area: primerAcordion; }
+      .contenedorAgenda .primerAcordion p {
+        font-size: 2rem; }
     .contenedorAgenda .tituloAgenda2 {
       grid-area: tituloAgenda2; }
     .contenedorAgenda .segundoAcordion {
       grid-area: segundoAcordion; }
+      .contenedorAgenda .segundoAcordion p {
+        font-size: 2rem; }
+      .contenedorAgenda .segundoAcordion li {
+        font-size: 2rem; }
     .contenedorAgenda h3 {
-      grid-area: h3; }
+      grid-area: h3;
+      font-size: 3rem; }
     .contenedorAgenda footer {
       grid-area: footer; } }
 
@@ -601,7 +613,8 @@ footer {
   .contenedorContacto h2 {
     grid-area: h2; }
   .contenedorContacto .formularioContacto {
-    grid-area: formularioContacto; }
+    grid-area: formularioContacto;
+    font-size: 1rem; }
   .contenedorContacto footer {
     grid-area: footer; }
 
@@ -618,6 +631,7 @@ footer {
     .contenedorContacto h2 {
       grid-area: h2; }
     .contenedorContacto .formularioContacto {
-      grid-area: formularioContacto; }
+      grid-area: formularioContacto;
+      font-size: 2rem; }
     .contenedorContacto footer {
       grid-area: footer; } }
