@@ -7,7 +7,6 @@ body {
   margin: 0.5rem;
   padding: 1rem;
   background-color: #cde3dc;
-  width: 86rem;
   align-content: center; }
 
 h1 {
@@ -89,10 +88,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 86rem; }
+  width: 86rem;
+  height: 3.5rem; }
   footer .logoParaFooter {
-    width: 2.5rem;
-    height: 2.5rem; }
+    width: 3rem;
+    height: 3rem; }
     footer .logoParaFooter:hover {
       transform: scale(1.2, 1.2); }
 
@@ -108,6 +108,9 @@ footer {
   .contenedorHome #carouselExampleIndicators {
     grid-area: carouselExampleIndicators;
     width: 86rem; }
+    .contenedorHome #carouselExampleIndicators .carousel-item {
+      width: 86rem;
+      height: 50 rem; }
   .contenedorHome .tiraHome1 {
     grid-area: tiraHome1;
     width: 86rem;
@@ -157,9 +160,6 @@ footer {
       text-align: center; }
   .contenedorHome footer {
     grid-area: footer; }
-  .contenedorHome .carousel-item {
-    width: 86rem;
-    height: 50 rem; }
 
 @media screen and (max-width: 500px) {
   .contenedorHome {
@@ -177,7 +177,7 @@ footer {
       margin: 0.2rem;
       font-size: 1.8rem;
       letter-spacing: 0.1rem;
-      word-spacing: 0.5rem;
+      word-spacing: 0.3rem;
       text-transform: uppercase;
       display: flex;
       flex-wrap: wrap;
@@ -246,11 +246,7 @@ footer {
         height: 20rem; }
     .contenedorHome footer {
       grid-area: footer;
-      width: 23rem;
-      height: 3.5rem; }
-      .contenedorHome footer .logoParaFooter {
-        width: 3rem;
-        height: 3rem; } }
+      width: 23rem; } }
 
 .contenedorNosotros {
   width: 86rem;
@@ -262,7 +258,12 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: repeat auto, 6;
   grid-template-areas: "h1" "menu" "cuadradoNosotros1" "fotoDelMedioNosotros" "cuadradoNosotros2" "footer"; }
+  .contenedorNosotros h1 {
+    grid-area: h1; }
+  .contenedorNosotros .menu {
+    grid-area: menu; }
   .contenedorNosotros .cuadradoNosotros1 {
+    grid-area: cuadradoNosotros1;
     width: 86rem;
     display: flex;
     flex-direction: row;
@@ -273,7 +274,13 @@ footer {
       overflow: auto;
       width: 21.5rem;
       justify-items: center; }
+  .contenedorNosotros .fotoDelMedioNosotros {
+    grid-area: fotoDelMedioNosotros; }
+    .contenedorNosotros .fotoDelMedioNosotros img {
+      width: 86rem;
+      height: 25rem; }
   .contenedorNosotros .cuadradoNosotros2 {
+    grid-area: cuadradoNosotros2;
     width: 86rem;
     display: flex;
     flex-direction: row;
@@ -284,19 +291,6 @@ footer {
       overflow: auto;
       width: 21.5rem;
       justify-items: center; }
-  .contenedorNosotros .fotoDelMedioNosotros img {
-    width: 86rem;
-    height: 25rem; }
-  .contenedorNosotros h1 {
-    grid-area: h1; }
-  .contenedorNosotros .menu {
-    grid-area: menu; }
-  .contenedorNosotros .cuadradoNosotros1 {
-    grid-area: cuadradoNosotros1; }
-  .contenedorNosotros .fotoDelMedioNosotros {
-    grid-area: fotoDelMedioNosotros; }
-  .contenedorNosotros .cuadradoNosotros2 {
-    grid-area: cuadradoNosotros2; }
   .contenedorNosotros footer {
     grid-area: footer; }
 
@@ -360,11 +354,7 @@ footer {
         height: fit-content; }
     .contenedorNosotros footer {
       grid-area: footer;
-      width: 23rem;
-      height: 3.5rem; }
-      .contenedorNosotros footer .logoParaFooter {
-        width: 3rem;
-        height: 3rem; } }
+      width: 23rem; } }
 
 .contenedorGaleria {
   width: 86rem;
@@ -374,7 +364,14 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: repeat auto, 10;
   grid-template-areas: "h1" "menu" "tituloElLugar" "tiraFotosLugar1" "tiraFotosLugar2" "tituloEventos" "tiraFotosEventos" "tituloElProceso" "tiraFotosProceso" "footer"; }
+  .contenedorGaleria h1 {
+    grid-area: h1; }
+  .contenedorGaleria .menu {
+    grid-area: menu; }
+  .contenedorGaleria .tituloElLugar {
+    grid-area: tituloElLugar; }
   .contenedorGaleria .tiraFotosLugar1 {
+    grid-area: tiraFotosLugar1;
     width: 86rem;
     display: flex;
     flex-direction: row;
@@ -393,6 +390,7 @@ footer {
         opacity: 1;
         border: white; }
   .contenedorGaleria .tiraFotosLugar2 {
+    grid-area: tiraFotosLugar1;
     width: 86rem;
     display: flex;
     flex-direction: row;
@@ -410,7 +408,10 @@ footer {
       .contenedorGaleria .tiraFotosLugar2 img:hover {
         opacity: 1;
         border: white; }
+  .contenedorGaleria .tituloEventos {
+    grid-area: tituloEventos; }
   .contenedorGaleria .tiraFotosEventos {
+    grid-area: tiraFotosEventos;
     width: 86rem;
     display: flex;
     flex-direction: row;
@@ -428,7 +429,10 @@ footer {
       .contenedorGaleria .tiraFotosEventos img:hover {
         opacity: 1;
         border: white; }
+  .contenedorGaleria .tituloElProceso {
+    grid-area: tituloElProceso; }
   .contenedorGaleria .tiraFotosProceso {
+    grid-area: tiraFotosEventos;
     width: 86rem;
     display: flex;
     flex-direction: row;
@@ -446,29 +450,12 @@ footer {
       .contenedorGaleria .tiraFotosProceso img:hover {
         opacity: 1;
         border: white; }
-  .contenedorGaleria h1 {
-    grid-area: h1; }
-  .contenedorGaleria .menu {
-    grid-area: menu; }
-  .contenedorGaleria .tituloElLugar {
-    grid-area: tituloElLugar; }
-  .contenedorGaleria .tiraFotosLugar1 {
-    grid-area: tiraFotosLugar1; }
-  .contenedorGaleria .tiraFotosLugar2 {
-    grid-area: tiraFotosLugar1; }
-  .contenedorGaleria .tituloEventos {
-    grid-area: tituloEventos; }
-  .contenedorGaleria .tiraFotosEventos {
-    grid-area: tiraFotosEventos; }
-  .contenedorGaleria .tituloElProceso {
-    grid-area: tituloElProceso; }
-  .contenedorGaleria .tiraFotosProceso {
-    grid-area: tiraFotosEventos; }
   .contenedorGaleria footer {
     grid-area: footer; }
 
 @media only screen and (max-width: 500px) {
   .contenedorGaleria {
+    width: 23rem;
     display: grid;
     gap: 1 rem;
     grid-template-columns: 1fr;
@@ -564,13 +551,10 @@ footer {
         height: 20rem; }
     .contenedorGaleria footer {
       grid-area: footer;
-      width: 23rem;
-      height: 3.5rem; }
-      .contenedorGaleria footer .logoParaFooter {
-        width: 3rem;
-        height: 3rem; } }
+      width: 23rem; } }
 
 .contenedorAgenda {
+  width: 86rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat auto, 8;
@@ -582,32 +566,45 @@ footer {
   .contenedorAgenda .tituloAgenda {
     grid-area: tituloAgenda; }
   .contenedorAgenda .primerAcordion {
-    grid-area: primerAcordion; }
-  .contenedorAgenda .tituloAgenda2 {
-    grid-area: tituloAgenda2; }
-  .contenedorAgenda .segundoAcordion {
-    grid-area: segundoAcordion; }
-  .contenedorAgenda h3 {
-    grid-area: h3; }
-  .contenedorAgenda footer {
-    grid-area: footer; }
-  .contenedorAgenda .accordion {
+    grid-area: primerAcordion;
     width: 86rem;
     font-family: 'Spectral', serif;
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: 0.2rem; }
-    .contenedorAgenda .accordion .colorTipoCabezal {
+    .contenedorAgenda .primerAcordion .colorTipoCabezal {
       background-color: #b95a5a;
       opacity: 0.8;
       color: black; }
-      .contenedorAgenda .accordion .colorTipoCabezal:hover {
+      .contenedorAgenda .primerAcordion .colorTipoCabezal:hover {
         opacity: 1; }
-    .contenedorAgenda .accordion .cuerpoAgenda {
+    .contenedorAgenda .primerAcordion .cuerpoAgenda {
       background-color: #cde3dc; }
+  .contenedorAgenda .tituloAgenda2 {
+    grid-area: tituloAgenda2; }
+  .contenedorAgenda .segundoAcordion {
+    grid-area: segundoAcordion;
+    width: 86rem;
+    font-family: 'Spectral', serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.2rem; }
+    .contenedorAgenda .segundoAcordion .colorTipoCabezal {
+      background-color: #b95a5a;
+      opacity: 0.8;
+      color: black; }
+      .contenedorAgenda .segundoAcordion .colorTipoCabezal:hover {
+        opacity: 1; }
+    .contenedorAgenda .segundoAcordion .cuerpoAgenda {
+      background-color: #cde3dc; }
+  .contenedorAgenda h3 {
+    grid-area: h3; }
+  .contenedorAgenda footer {
+    grid-area: footer; }
 
 @media screen and (max-width: 500px) {
   .contenedorAgenda {
+    width: 23rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat auto, 8;
@@ -634,9 +631,12 @@ footer {
       width: 23rem;
       font-size: 2rem; }
     .contenedorAgenda .primerAcordion {
-      width: 23rem;
-      grid-area: primerAcordion; }
+      grid-area: primerAcordion;
+      width: 23rem; }
       .contenedorAgenda .primerAcordion p {
+        font-size: 1rem;
+        text-align: center; }
+      .contenedorAgenda .primerAcordion li {
         font-size: 1rem;
         text-align: center; }
     .contenedorAgenda .tituloAgenda2 {
@@ -659,11 +659,7 @@ footer {
       margin: 0.5rem; }
     .contenedorAgenda footer {
       grid-area: footer;
-      width: 23rem;
-      height: 3.5rem; }
-      .contenedorAgenda footer .logoParaFooter {
-        width: 3rem;
-        height: 3rem; } }
+      width: 23rem; } }
 
 .contenedorContacto {
   width: 86rem;
@@ -671,9 +667,15 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto, 5);
   grid-template-areas: "h1" "menu" "h2" "formularioContacto" "footer"; }
+  .contenedorContacto h1 {
+    grid-area: h1; }
+  .contenedorContacto .menu {
+    grid-area: menu; }
+  .contenedorContacto h2 {
+    grid-area: h2; }
   .contenedorContacto .formularioContacto {
+    grid-area: formularioContacto;
     width: 86rem;
-    margin: 1rem;
     display: flex;
     justify-content: center;
     font-family: 'Spectral', serif;
@@ -684,15 +686,6 @@ footer {
       padding: 1rem;
       border: none;
       text-align: center; }
-  .contenedorContacto h1 {
-    grid-area: h1; }
-  .contenedorContacto .menu {
-    grid-area: menu; }
-  .contenedorContacto h2 {
-    grid-area: h2; }
-  .contenedorContacto .formularioContacto {
-    grid-area: formularioContacto;
-    font-size: 1rem; }
   .contenedorContacto footer {
     grid-area: footer; }
 
@@ -722,15 +715,11 @@ footer {
       line-height: 2.5rem; }
     .contenedorContacto h2 {
       grid-area: h2;
-      font-size: 2rem; }
+      font-size: 2rem;
+      width: 23rem; }
     .contenedorContacto .formularioContacto {
       width: 23rem;
-      grid-area: formularioContacto;
-      font-size: 1rem; }
+      grid-area: formularioContacto; }
     .contenedorContacto footer {
       grid-area: footer;
-      width: 23rem;
-      height: 3.5rem; }
-      .contenedorContacto footer .logoParaFooter {
-        width: 3rem;
-        height: 3rem; } }
+      width: 23rem; } }

@@ -1,5 +1,4 @@
 .contenedorHome{
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 7);
@@ -23,13 +22,13 @@
     img{
         width: $anchogeneral/3;
         height: 25rem;
-    }
+        }
 
     p{
         width: $anchogeneral/2;
         font-size: 2.2rem;
         text-align: center;
-    }
+        }
 
     }  
 
@@ -46,6 +45,11 @@
     #carouselExampleIndicators{
         grid-area: carouselExampleIndicators;
         width: $anchogeneral;
+
+        .carousel-item{
+            width: $anchogeneral;
+            height: 50 rem;
+        }
     }
 
     .tiraHome1{
@@ -53,13 +57,13 @@
     @include tiraHome;
     }
 
+
     .tiraHome2{
     grid-area: tiraHome2;
     @include tiraHome;
     background-color:  $bordo;
     border-radius: 5%;
     }
-
 
 
     .tiraHome3{
@@ -73,15 +77,9 @@
     }
 
 
-    .carousel-item{
-        width: $anchogeneral;
-        height: 50 rem;
-    }
-
 }
 
 @media screen and (max-width: 500px){
-
     .contenedorHome{
     width: $anchogeneralmobile;
     display: grid;
@@ -133,7 +131,7 @@
         margin: 0.2rem;
         font-size: 1.8rem;
         letter-spacing: 0.1rem;
-        word-spacing: 0.5rem;
+        word-spacing: 0.3rem;
         text-transform: uppercase;
         display: flex;
         flex-wrap: wrap;
@@ -152,7 +150,7 @@
         img{
             max-width: $anchogeneralmobile;
             height: 20rem;
-        }
+            }
     }
     
 
@@ -177,11 +175,6 @@
     footer{
         grid-area: footer;
         width: $anchogeneralmobile;
-        height: 3.5rem;
-        .logoParaFooter{
-            width: 3rem;
-            height: 3rem;
     }
-}
 }
 }

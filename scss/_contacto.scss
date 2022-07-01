@@ -1,24 +1,5 @@
 .contenedorContacto{
     width: $anchogeneral;
-
-    
-    .formularioContacto{
-        width: $anchogeneral;
-        margin: 1rem;
-        display: flex;
-        justify-content: center;
-        font-family: 'Spectral', serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        letter-spacing: 0.2rem;
-
-        fieldset{
-            padding: 1rem;
-            border: none;
-            text-align: center;
-        }
-    }
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 5);
@@ -44,7 +25,19 @@
 
     .formularioContacto{
         grid-area: formularioContacto;
+        width: $anchogeneral;
+        display: flex;
+        justify-content: center;
+        font-family: 'Spectral', serif;
         font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.2rem;
+
+        fieldset{
+            padding: 1rem;
+            border: none;
+            text-align: center;
+        }
     }
 
     footer{
@@ -92,22 +85,17 @@
         h2{
             grid-area: h2;
             font-size: 2rem;
+            width: $anchogeneralmobile;
         }
     
         .formularioContacto{
             width: $anchogeneralmobile;
             grid-area: formularioContacto;
-            font-size: 1rem;
         }
     
         footer{
             grid-area: footer;
             width: $anchogeneralmobile;
-            height: 3.5rem;
-            .logoParaFooter{
-                width: 3rem;
-                height: 3rem;
         }
-    }
     }
 }

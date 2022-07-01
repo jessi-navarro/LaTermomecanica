@@ -30,24 +30,6 @@
                 }
             }
         }
-    
-
-    .tiraFotosLugar1{
-    @include tiraFotos;
-    }
-
-    .tiraFotosLugar2{
-    @include tiraFotos;
-    }
-
-    .tiraFotosEventos{
-    @include tiraFotos;
-    }
-
-
-    .tiraFotosProceso{
-    @include tiraFotos;
-    }
 
     
     display: grid;
@@ -79,10 +61,12 @@
 
     .tiraFotosLugar1{
         grid-area: tiraFotosLugar1;
+        @include tiraFotos;
     }
 
     .tiraFotosLugar2{
         grid-area: tiraFotosLugar1;
+        @include tiraFotos;
     }
 
     .tituloEventos{
@@ -91,6 +75,7 @@
 
     .tiraFotosEventos{
         grid-area: tiraFotosEventos;
+        @include tiraFotos;
     }
 
     .tituloElProceso{
@@ -99,6 +84,7 @@
 
     .tiraFotosProceso{
         grid-area: tiraFotosEventos;
+        @include tiraFotos;
     }
 
     footer{
@@ -128,9 +114,15 @@
                 }
             }
 
+            
+        @mixin titulosGaleriaMobile{
+            width: $anchogeneralmobile;
+            font-size: 2.5rem;
+            letter-spacing: 0.5rem;
+        }
 
 
-
+    width: $anchogeneralmobile;
     display: grid;
     gap: 1 rem;
     grid-template-columns: 1fr;
@@ -171,9 +163,7 @@
 
     .tituloElLugar{
         grid-area: tituloElLugar;
-        width: $anchogeneralmobile;
-        font-size: 2.5rem;
-        letter-spacing: 0.5rem;
+        @include titulosGaleriaMobile;
     }
 
     .tiraFotosLugar1{
@@ -188,9 +178,7 @@
 
     .tituloEventos{
         grid-area: tituloEventos;
-        width: $anchogeneralmobile;
-        font-size: 2.5rem;
-        letter-spacing: 0.5rem;
+        @include titulosGaleriaMobile;
     }
 
     .tiraFotosEventos{
@@ -200,9 +188,7 @@
 
     .tituloElProceso{
         grid-area: tituloElProceso;
-        width: $anchogeneralmobile;
-        font-size: 2.5rem;
-        letter-spacing: 0.5rem;
+        @include titulosGaleriaMobile;
     }
 
     .tiraFotosProceso{
@@ -213,11 +199,6 @@
     footer{
         grid-area: footer;
         width: $anchogeneralmobile;
-        height: 3.5rem;
-        .logoParaFooter{
-            width: 3rem;
-            height: 3rem;
     }
 }
-    }
 }

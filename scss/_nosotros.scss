@@ -20,25 +20,8 @@
             width: $anchogeneral/4;
             justify-items: center;
             }
-        }
-    
+    }
 
-        .cuadradoNosotros1{
-            @include cuadradonosotros;
-        }
-
-
-        .cuadradoNosotros2{
-            @include cuadradonosotros;
-        }
-
-
-        .fotoDelMedioNosotros{ 
-            img{
-            width: $anchogeneral;
-            height: 25rem; 
-            }
-        }
         
     display: grid;
     grid-template-columns: 1fr;
@@ -61,14 +44,21 @@
 
     .cuadradoNosotros1{
         grid-area: cuadradoNosotros1;
+        @include cuadradonosotros;
     }
 
     .fotoDelMedioNosotros{
         grid-area: fotoDelMedioNosotros;
+        
+        img{
+            width: $anchogeneral;
+            height: 25rem; 
+            }
     }
 
     .cuadradoNosotros2{
         grid-area: cuadradoNosotros2;
+        @include cuadradonosotros;
     }
 
     footer{
@@ -156,13 +146,6 @@
     footer{
         grid-area: footer;
         width: $anchogeneralmobile;
-        height: 3.5rem;
-        .logoParaFooter{
-            width: 3rem;
-            height: 3rem;
     }
 }
-    }
-
-    
 }

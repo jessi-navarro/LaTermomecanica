@@ -1,4 +1,28 @@
 .contenedorAgenda{
+
+    @mixin acordionGeneral{
+        width: $anchogeneral;
+        font-family: 'Spectral', serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.2rem;
+
+        .colorTipoCabezal{
+            background-color: $bordo;
+            opacity: 0.8;
+            color: black;
+
+            &:hover{
+                opacity:1;
+            }
+        }
+    
+        .cuerpoAgenda{
+            background-color: $verdeagua;
+        }
+    }
+
+    width: $anchogeneral;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 8);
@@ -26,6 +50,7 @@
 
     .primerAcordion{
         grid-area: primerAcordion;
+        @include acordionGeneral;
     }
 
 
@@ -35,6 +60,7 @@
 
     .segundoAcordion{
         grid-area: segundoAcordion;
+        @include acordionGeneral;
     }
 
 
@@ -46,35 +72,31 @@
         grid-area: footer;
     }
 
-
-    .accordion{
-        width: $anchogeneral;
-        font-family: 'Spectral', serif;
-        font-size: 1rem;
-        line-height: 1.5;
-        letter-spacing: 0.2rem;
-
-        .colorTipoCabezal{
-            background-color: $bordo;
-            opacity: 0.8;
-            color: black;
-
-            &:hover{
-                opacity:1;
-            }
-        }
-    
-        .cuerpoAgenda{
-            background-color: $verdeagua;
-        }
-
-
-    }
-
 }
 
+
+
 @media screen and (max-width:500px) {
+
+    @mixin titulosAgendaMobile{
+        width: $anchogeneralmobile;
+        font-size: 2rem;        
+    }
+
+    @mixin acordionGeneralMobile{
+        width: $anchogeneralmobile;
+        p{
+            font-size: 1rem;
+            text-align: center;
+        }
+        li{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
     .contenedorAgenda{
+    width: $anchogeneralmobile;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 8);
@@ -112,38 +134,23 @@
 
     .tituloAgenda{
         grid-area: tituloAgenda;
-        width: $anchogeneralmobile;
-        font-size: 2rem;
+        @include titulosAgendaMobile;
     }
 
     .primerAcordion{
-        width: $anchogeneralmobile;
         grid-area: primerAcordion;
-        p{
-            font-size: 1rem;
-            text-align: center;
-        }
+        @include acordionGeneralMobile;
     }
-
 
 
     .tituloAgenda2{
         grid-area: tituloAgenda2;
-        width: $anchogeneralmobile;
-        font-size: 2rem;
+        @include titulosAgendaMobile;
     }
 
     .segundoAcordion{
         grid-area: segundoAcordion;
-        width: $anchogeneralmobile;
-        p{
-            font-size: 1rem;
-            text-align: center;
-        }
-        li{
-            font-size: 1rem;
-            text-align: center;
-        }
+        @include acordionGeneralMobile;
     }
     
 
@@ -157,12 +164,7 @@
     footer{
         grid-area: footer;
         width: $anchogeneralmobile;
-        height: 3.5rem;
-        .logoParaFooter{
-            width: 3rem;
-            height: 3rem;
-    }
-}
+    }   
 
 }
 }
