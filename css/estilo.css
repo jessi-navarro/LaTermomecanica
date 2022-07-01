@@ -494,7 +494,7 @@ footer {
         width: 21rem;
         height: 15rem; }
       .contenedorGaleria .tiraFotosLugar1 img {
-        margin: 1rem;
+        margin: 0.5rem;
         width: 10.5rem;
         height: 20rem; }
     .contenedorGaleria .tiraFotosLugar2 {
@@ -508,7 +508,7 @@ footer {
         width: 21rem;
         height: 15rem; }
       .contenedorGaleria .tiraFotosLugar2 img {
-        margin: 1rem;
+        margin: 0.5rem;
         width: 10.5rem;
         height: 20rem; }
     .contenedorGaleria .tituloEventos {
@@ -527,7 +527,7 @@ footer {
         width: 21rem;
         height: 15rem; }
       .contenedorGaleria .tiraFotosEventos img {
-        margin: 1rem;
+        margin: 0.5rem;
         width: 10.5rem;
         height: 20rem; }
     .contenedorGaleria .tituloElProceso {
@@ -546,7 +546,7 @@ footer {
         width: 21rem;
         height: 15rem; }
       .contenedorGaleria .tiraFotosProceso img {
-        margin: 1rem;
+        margin: 0.5rem;
         width: 10.5rem;
         height: 20rem; }
     .contenedorGaleria footer {
