@@ -6,7 +6,7 @@
     grid-template-areas:
     "h1"
     "menu"
-    "carouselExampleControls"
+    "carouselExampleIndicators"
     "tiraHome1"
     "tiraHome2"
     "tiraHome3"
@@ -43,8 +43,8 @@
         grid-area: menu;
     }
 
-    #carouselExampleControls{
-        grid-area: carouselExampleControls;
+    #carouselExampleIndicators{
+        grid-area: carouselExampleIndicators;
         width: $anchogeneral;
     }
 
@@ -83,13 +83,14 @@
 @media screen and (max-width: 500px){
 
     .contenedorHome{
+    width: $anchogeneralmobile;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (auto, 7);
     grid-template-areas:
     "h1"
     "menu"
-    "carouselExampleControls"
+    "carouselExampleIndicators"
     "tiraHome1"
     "tiraHome2"
     "tiraHome3"
@@ -98,44 +99,62 @@
     
 
     @mixin tiraHomeMobile{
-        width: $anchogeneral;
-        height: 60rem;
+        width: $anchogeneralmobile;
+        height: fit-content;
         padding: 1rem;
-        margin: 1rem;
+        margin: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         p{
-            font-size: 2.8rem;
+            font-size: 1.5rem;
             overflow: auto;
-            width: $anchogeneral;
-            height: 20rem;
-
+            width: $anchogeneralmobile;
+            height: fit-content;
         }
 
         img{
-            width: 45rem;
-            height: 40rem;
+            width: $anchogeneralmobile/2;
+            height: 20rem;
         }
 
     }
 
     h1{
         grid-area: h1;
+        width: $anchogeneralmobile;
+        font-size: 3rem;
+        letter-spacing: 0.3rem;
     }
 
     
     .menu{
-        grid-area: menu;
-        li{
-            font-size: 3.5;
+        margin: 0.2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.5rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: $anchogeneralmobile;
+        height: 5rem;
+        line-height: 2.5rem;
+    }
+        
+        
+
+    #carouselExampleIndicators{
+        grid-area: carouselExampleIndicators;
+        width: $anchogeneralmobile;
+
+        img{
+            max-width: $anchogeneralmobile;
+            height: 20rem;
         }
     }
-
-    #carouselExampleControls{
-        grid-area: carouselExampleControls;
-    }
+    
 
     .tiraHome1{
     grid-area: tiraHome1;
@@ -157,6 +176,7 @@
 
     footer{
         grid-area: footer;
+        width: $anchogeneralmobile;
         height: 3.5rem;
         .logoParaFooter{
             width: 3rem;

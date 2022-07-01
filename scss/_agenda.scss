@@ -90,23 +90,38 @@
 
     h1{
         grid-area: h1;
+        width: $anchogeneralmobile;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
     }
 
+    
     .menu{
-        grid-area: menu;
-        li{
-            font-size: 3.5;
-        }
+        margin: 0.2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.3rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: $anchogeneralmobile;
+        height: 5rem;
+        line-height: 2.5rem;
     }
 
     .tituloAgenda{
         grid-area: tituloAgenda;
+        width: $anchogeneralmobile;
+        font-size: 2rem;
     }
 
     .primerAcordion{
+        width: $anchogeneralmobile;
         grid-area: primerAcordion;
         p{
-            font-size: 2rem;
+            font-size: 1rem;
+            text-align: center;
         }
     }
 
@@ -114,26 +129,34 @@
 
     .tituloAgenda2{
         grid-area: tituloAgenda2;
+        width: $anchogeneralmobile;
+        font-size: 2rem;
     }
 
     .segundoAcordion{
         grid-area: segundoAcordion;
+        width: $anchogeneralmobile;
         p{
-            font-size: 2rem;
+            font-size: 1rem;
+            text-align: center;
         }
         li{
-            font-size: 2rem;
+            font-size: 1rem;
+            text-align: center;
         }
     }
     
 
     h3{
         grid-area: h3;
-        font-size: 3rem;
+        font-size: 1.5rem;
+        width: $anchogeneralmobile;
+        margin: 0.5rem;
     }
 
     footer{
         grid-area: footer;
+        width: $anchogeneralmobile;
         height: 3.5rem;
         .logoParaFooter{
             width: 3rem;

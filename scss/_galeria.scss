@@ -1,5 +1,4 @@
 .contenedorGaleria{
-    margin: 1rem;
     width: $anchogeneral;
     text-align: center;
     font-family: 'Spectral', serif;
@@ -110,30 +109,22 @@
 
 @media only screen and (max-width: 500px){
     .contenedorGaleria{
-
         @mixin tiraFotosMobile{
-            width: $anchogeneral;
+            width: $anchogeneralmobile;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
     
             .fotoRectangular{
-                width: $anchogeneral - 5rem;
-                height: 25rem; 
+                width: $anchogeneralmobile - 2rem;
+                height: 15rem; 
             }
     
             img{
                 margin: 1rem;
-                width: ($anchogeneral/2) - 3rem;
-                height: 50rem;
-                opacity: 0.7;
-                border: black;
-                    
-                    &:hover{
-                    opacity: 1;
-                    border: white;
-                    }
+                width: ($anchogeneralmobile/2) - 1rem;
+                height: 20rem;
                 }
             }
 
@@ -158,17 +149,31 @@
 
     h1{
         grid-area: h1;
+        width: $anchogeneralmobile;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
     }
 
+    
     .menu{
-        grid-area: menu;
-        li{
-            font-size: 3.5;
-        }
+        margin: 0.2rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.3rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: $anchogeneralmobile;
+        height: 5rem;
+        line-height: 2.5rem;
     }
 
     .tituloElLugar{
         grid-area: tituloElLugar;
+        width: $anchogeneralmobile;
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
     }
 
     .tiraFotosLugar1{
@@ -183,6 +188,9 @@
 
     .tituloEventos{
         grid-area: tituloEventos;
+        width: $anchogeneralmobile;
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
     }
 
     .tiraFotosEventos{
@@ -192,6 +200,9 @@
 
     .tituloElProceso{
         grid-area: tituloElProceso;
+        width: $anchogeneralmobile;
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
     }
 
     .tiraFotosProceso{
@@ -201,6 +212,7 @@
 
     footer{
         grid-area: footer;
+        width: $anchogeneralmobile;
         height: 3.5rem;
         .logoParaFooter{
             width: 3rem;
