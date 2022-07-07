@@ -36,11 +36,11 @@
                 </ul>
             </nav>
         </header>
-        
+
         <main>
         <h2 data-aos="zoom-out">Te interesa el proyecto? Contactanos!</h2>
 
-        <form class="formularioContacto" action="">
+        <form class="formularioContacto" action="enviar.php" method="post">
             <fieldset>
                 <div>
                     <label for="nombre y apellido"><b>Ingresa tu nombre y apellido</b></label>
@@ -55,7 +55,7 @@
                 <br>
                 <div>
                     <label for="Cómo nos conociste?"><b>Cómo nos conociste?</b></label>
-                    <select name="Cómo nos conociste?" id="">
+                    <select name="comonosconociste" id="">
                         <option value="Por redes">Por redes</option>
                         <option value="Conozco a alguien del proyecto">Conozco a alguien del proyecto</option>
                         <option value="Fui a un evento en La Termo">Fui a un evento en La Termo</option>
@@ -73,7 +73,7 @@
                 <br>
                 <div>
                     <label for="Por qué te interesa el proyecto?"><b>Por qué te interesa el proyecto?</b></label>
-                    <select name="Por qué te interesa el proyecto?" id="">
+                    <select name="porqueteinteresaelproyecto" id="">
                         <option value="Doy un curso y quiero utilizar el espacio">Doy un curso y quiero utilizar el espacio</option>
                         <option value="Quiero enterarme de eventos/fechas">Quiero enterarme de eventos/fechas</option>
                         <option value="Quiero hacer un evento en La Termo">Quiero hacer un evento en La Termo</option>
@@ -83,7 +83,7 @@
                 <br>
                 <div>
                     <label for="Dejanos tu comentario">Estamos arrancando este proyecto y todo lo que tengas para decir nos sirve! <b>Deja tu comentario:</b></label><br>
-                    <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Les quería contar que..."></textarea>
+                    <textarea name="comentarios" id="mensaje" cols="30" rows="10" placeholder="Les quería contar que..."></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Enviar">
